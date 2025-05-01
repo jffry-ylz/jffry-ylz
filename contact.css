@@ -1,0 +1,131 @@
+/* Contact Page Styles */
+.contact-hero {
+    position: relative;
+    background: url('img/pc.png') center/cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-70 {
+    min-height: 70vh;
+}
+
+.contact-form-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item .icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.contact-item .details h5 {
+    margin-bottom: 0.3rem;
+    color: var(--primary-dark);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.form-control {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.2);
+    border-color: var(--primary);
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.faq-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.accordion-button {
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary);
+    background-color: var(--primary-light);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(106, 13, 173, 0.2);
+}
+
+.accordion-button::after {
+    background-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    background: white;
+}
